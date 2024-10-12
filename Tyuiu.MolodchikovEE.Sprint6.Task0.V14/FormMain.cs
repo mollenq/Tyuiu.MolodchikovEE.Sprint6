@@ -13,7 +13,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task0.V14
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы ИИПб-24-1 Молодчиков Егор Евгеньевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show("Таск 0 выполнил студент группы ИИПб-24-1 Молодчиков Егор Евгеньевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
