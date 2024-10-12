@@ -93,7 +93,6 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task1.V26
             label3.Size = new Size(73, 19);
             label3.TabIndex = 2;
             label3.Text = "Результат:";
-            label3.Click += label3_Click;
             // 
             // textBoxResult
             // 
@@ -146,7 +145,6 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task1.V26
             label2.Size = new Size(85, 19);
             label2.TabIndex = 1;
             label2.Text = "Конец шага:";
-            label2.Click += label2_Click;
             // 
             // label1
             // 
@@ -157,7 +155,6 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task1.V26
             label1.Size = new Size(82, 19);
             label1.TabIndex = 0;
             label1.Text = "Старт шага:";
-            label1.Click += label1_Click;
             // 
             // buttonRun
             // 
