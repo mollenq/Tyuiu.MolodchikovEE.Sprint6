@@ -13,7 +13,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task2.V4.Lib
             int count = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                y = Math.Round((5 * i + 2.5) / (Math.Sin(i) + 2) + (2 * i) + 2);
+                y = Math.Round((5 * i + 2.5) / (Math.Sin(i) + 2) + (2 * i) + 2,2);
                 valueArray[count] = y;
                 count++;
             }
