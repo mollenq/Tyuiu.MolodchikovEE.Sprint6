@@ -23,7 +23,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15.Lib
                     result.Append(words[^1] + " ");
                 }
             }
-
+             
             return result.ToString().Trim();
         }
     }
