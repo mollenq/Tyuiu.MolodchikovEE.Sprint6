@@ -8,15 +8,15 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15.Lib
         {            
             string[] lines = File.ReadAllLines(path);
             string result = "";
-            foreach (string line in lines)
-            {
-                string[] words = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            //foreach (string line in lines)
+            //{
+            //    string[] words = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-                if (words.Length > 0)
-                {
-                    result += words[words.Length - 1] + " ";
-                }
-            }
+            //    if (words.Length > 0)
+            //    {
+            //        result += words[words.Length - 1] + " ";
+            //    }
+            //}
 
             return result;
         }
