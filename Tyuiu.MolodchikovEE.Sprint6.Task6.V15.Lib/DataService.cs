@@ -6,6 +6,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15.Lib
     {
         public string CollectTextFromFile(string str, string path)
         {
+            str = str.Trim();
             string[] lines = File.ReadAllLines(path);
             string result = "";
 
