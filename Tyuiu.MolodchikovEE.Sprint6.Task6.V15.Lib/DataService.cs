@@ -18,7 +18,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15.Lib
                 }
             }
 
-            return result.Trim();
+            return result;
         }
     }
 }
