@@ -4,6 +4,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task5.V10.Lib
 {
     public class DataService : ISprint6Task5V10
     {
+        public int len = 25;
         public double[] LoadFromDataFile(string path)
         {
             string[] lines = File.ReadAllLines(path);
