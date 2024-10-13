@@ -69,6 +69,9 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task1.V26
 
         }
 
-
+        private void buttonHelp_MouseEnter(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Таск 1 выполнил студент группы ИИПб-24-1 Молодчиков Егор Евгеньевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
