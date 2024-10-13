@@ -6,23 +6,19 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task3.V27.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            int rows = matrix.GetLength(0); 
-            int columns = matrix.GetLength(1); 
+            int rows = matrix.GetLength(0);
+            int[] fourthColumn = new int[rows];
 
-            for (int i = 0; i < rows - 1; i++)
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = i + 1; j < rows; j++)
-                {
-                    if (matrix[i, 3] > matrix[j, 3]) 
-                    {
-                        for (int k = 0; k < columns; k++)
-                        {
-                            int temp = matrix[i, k];
-                            matrix[i, k] = matrix[j, k];
-                            matrix[j, k] = temp;
-                        }
-                    }
-                }
+                fourthColumn[i] = matrix[i, 3];
+            }
+
+            Array.Sort(fourthColumn);
+
+            for (int i = 0; i < rows; i++)
+            {
+                matrix[i, 3] = fourthColumn[i];
             }
 
             return matrix;
