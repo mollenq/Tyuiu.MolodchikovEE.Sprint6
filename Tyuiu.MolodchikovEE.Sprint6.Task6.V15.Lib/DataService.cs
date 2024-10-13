@@ -5,14 +5,9 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15.Lib
 {
     public class DataService : ISprint6Task6V15
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {            
-            string fullPath = Path.Combine(path, str);
-            if (!File.Exists(fullPath))
-            {
-                throw new FileNotFoundException($"Файл не найден: {fullPath}");
-            }
-            string[] lines = File.ReadAllLines(fullPath);
+            string[] lines = File.ReadAllLines(path);
             StringBuilder result = new StringBuilder();
             foreach (string line in lines)
             {
@@ -23,8 +18,9 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15.Lib
                     result.Append(words[^1] + " ");
                 }
             }
-             
+
             return result.ToString().Trim();
         }
     }
+    
 }
