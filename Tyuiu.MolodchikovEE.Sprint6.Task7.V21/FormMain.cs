@@ -1,7 +1,6 @@
-using System.Windows.Forms.VisualStyles;
-using Tyuiu.MolodchikovEE.Sprint6.Task6.V15.Lib;
+using Tyuiu.MolodchikovEE.Sprint6.Task7.V21.Lib;
 
-namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15
+namespace Tyuiu.MolodchikovEE.Sprint6.Task7.V21
 {
     public partial class FormMain : Form
     {
@@ -20,7 +19,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15
         }
 
         private void buttonRun_Click(object sender, EventArgs e)
-        {  
+        {
             textBoxPrint.Text = ds.CollectTextFromFile(openFilePath);
         }
 
@@ -43,6 +42,5 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task6.V15
         {
             MessageBox.Show("Привет");
         }
-
     }
 }
