@@ -27,7 +27,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task7.V21.Lib
                 }
             }
 
-            return matrix;
+            return result;
         }
     }
     
