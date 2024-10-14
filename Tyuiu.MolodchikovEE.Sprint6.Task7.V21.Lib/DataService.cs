@@ -14,6 +14,7 @@ namespace Tyuiu.MolodchikovEE.Sprint6.Task7.V21.Lib
             for (int i = 0; i < rows; i++)
             {
                 string[] values = lines[i].Split(',');
+
                 for (int j = 0; j < columns; j++)
                 {
                     matrix[i, j] = int.Parse(values[j]);
